@@ -1,0 +1,91 @@
+body {
+  background: #FCFCFC;
+  font-family: helvetica, arial, 'sans-serif';
+}
+
+header {
+  background-color: #002e54;
+  font-size: 150%;
+}
+
+header h1 {
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: #C0C0C0;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  display: inline;
+}
+
+nav ul li {
+  padding: 0;
+  margin-left: 1rem;
+  display: inline;
+}
+
+nav a#lnk_add {
+  float: right;
+}
+
+#featured {
+  text-align: center;
+  background-color: #DCDCDC;
+  margin: 20px 0 20px 0;
+  padding: 20px;
+}
+
+#motorcycle {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+#motorcycles {
+  margin: 20px 0 20px 0;
+  background-color: #AAA;
+  width: 100%;
+  padding: 20px;
+  border-collapse: collapse;
+}
+
+#motorcycles thead {
+  background-color: #333;
+  color: #FFF;
+}
+
+#motorcycles td {
+  padding: 20px;
+}
+
+img.thumbnail {
+  border: 1px solid #666;
+  box-shadow: -1px 1px 4px #666;
+}
+
+#motorcycle img {
+  box-shadow: -2px 2px 6px #666;
+}
+
+#motorcycle_form_container {
+  margin: 40px;
+}
+
+#motorcycle_form_container label {
+  display: inline-block;
+  width: 150px;
+  margin-bottom: 40px;
+}
+
+ul#categories {
+  list-style-type: none;
+  margin: 40px;
+  padding: 0;
+}
