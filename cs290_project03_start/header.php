@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head>
   <title>Motorcycle Mania</title>
-  <link rel="stylesheet" type="text/css" media="all" href="assets/stylesheets/main.css">
+  <link rel="stylesheet" type="text/css" media="all" href="/assets/stylesheets/main.css">
   <style>
   </style>
   <script src="/assets/javascript/main.js"></script>
@@ -14,9 +14,9 @@
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/categories">Categories</a></li>
-        <li><a href="/manufacturers.html">Manufacturers</a></li>
+        <li><a href="/manufacturers">Manufacturers</a></li>
       </ul>
-      <a id="lnk_add" href="motorcycles/new.php">+ Add a Bike</a>
+      <a id="lnk_add" href="/motorcycles/new.php">+ Add a Bike</a>
     </nav>
   </header>
   <main>

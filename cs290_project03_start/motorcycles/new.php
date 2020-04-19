@@ -1,7 +1,7 @@
 <?php include '../header.php'; ?>
     <h2>Add a New Motorcycle</h2>
     <div id="motorcycle_form_container">
-      <form action="motorcycles/create.php" method="GET">
+      <form action="/motorcycles/create.php" method="POST">
         <label for="category_id">Category</label>
         <select name="category_id">
           <option value="">Select...</option>
@@ -22,16 +22,16 @@
         </select>
         <br>
         <label for="model">Model</label>
-        <input type="text">
+        <input type="text" name="model">
         <br>
         <label for="year">Year</label>
-        <input type="text" name="yeah">
+        <input type="text" name="year">
         <br>
         <label for="motor_cc">Motor cc</label>
         <input type="text" name="motor_cc">
         <br>
         <label for="motor_hp">Motor hp</label>
-        <input type="text" name="motor-hp">
+        <input type="text" name="motor_hp">
         <br>
         <label for="image">Image</label>
         <input type="file" name="image">
