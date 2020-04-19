@@ -4,8 +4,7 @@ body {
 }
 
 header {
-  background-color: #002e54;
-  font-size: 150%;
+  background-color: #666;
 }
 
 header h1 {
@@ -35,6 +34,12 @@ nav a#lnk_add {
   float: right;
 }
 
+footer {
+  margin-top: 1rem;
+  border-top: 1px solid #EEE;
+  color: #CCC;
+}
+
 #featured {
   text-align: center;
   background-color: #DCDCDC;
@@ -48,6 +53,10 @@ nav a#lnk_add {
   margin: auto;
 }
 
+#motorcycle img {
+  width: 80%;
+}
+
 #motorcycles {
   margin: 20px 0 20px 0;
   background-color: #AAA;
@@ -57,12 +66,17 @@ nav a#lnk_add {
 }
 
 #motorcycles thead {
+  text-align: left;
   background-color: #333;
   color: #FFF;
 }
 
-#motorcycles td {
+#motorcycles td, #motorcycles th {
   padding: 20px;
+}
+
+#motorcycles tbody tr:hover {
+  background-color: #999;
 }
 
 img.thumbnail {
@@ -73,7 +87,6 @@ img.thumbnail {
 #motorcycle img {
   box-shadow: -2px 2px 6px #666;
 }
-
 #motorcycle_form_container {
   margin: 40px;
 }
@@ -83,9 +96,13 @@ img.thumbnail {
   width: 150px;
   margin-bottom: 40px;
 }
+#motorcycle_form_container input[type='submit'] {
+  margin-left: 150px;
+}
 
 ul#categories {
   list-style-type: none;
   margin: 40px;
   padding: 0;
 }
+

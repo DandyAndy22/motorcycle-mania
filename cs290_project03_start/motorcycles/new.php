@@ -1,28 +1,7 @@
-<!DOCTYPE html>
-<html lang="en-us">
-<head>
-  <title>Motorcycle Mania</title>
-  <link rel="stylesheet" type="text/css" media="all" href="/main.css">
-  <style>
-  </style>
-  <script src="/main.js"></script>
-</head>
-<body>
-  <header>
-    <h1><a href="/">Motorcycle Mania!</a></h1>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/categories.html">Categories</a></li>
-        <li><a href="/manufacturers.html">Manufacturers</a></li>
-      </ul>
-      <a id="lnk_add" href="/motorcycle_form.html">+ Add a Bike</a>
-    </nav>
-  </header>
-  <main>
+<?php include '../header.php'; ?>
     <h2>Add a New Motorcycle</h2>
     <div id="motorcycle_form_container">
-      <form method="GET">
+      <form action="motorcycles/create.php" method="GET">
         <label for="category_id">Category</label>
         <select name="category_id">
           <option value="">Select...</option>
@@ -43,13 +22,16 @@
         </select>
         <br>
         <label for="model">Model</label>
-        <input type="text" name="model">
+        <input type="text">
         <br>
         <label for="year">Year</label>
-        <input type="text" name="year">
+        <input type="text" name="yeah">
         <br>
         <label for="motor_cc">Motor cc</label>
         <input type="text" name="motor_cc">
+        <br>
+        <label for="motor_hp">Motor hp</label>
+        <input type="text" name="motor-hp">
         <br>
         <label for="image">Image</label>
         <input type="file" name="image">
@@ -57,9 +39,4 @@
         <input type="submit" value="Save">
       </form>
     </div>
-  </main>
-  <footer>
-    <p>&copy; 2020 YOUR NAME</p>
-  </footer>
-</body>
-</html>
+<?php include '../footer.php'; ?>
