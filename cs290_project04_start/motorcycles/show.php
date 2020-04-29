@@ -33,9 +33,9 @@ $category_name = $motorcycle['category_name'];
 mysqli_close($db);
 ?>
 <div id="motorcycle">
-  <h3><a href="/motorcycles/<?= $motorcycle_id ?>.php"><?= $motorcycle_year ?> <?= $manufacturer_name ?> <?= $motorcycle_model ?></a></h3>
-  <a href="/motorcycles/<?= $motorcycle_id ?>.php"><img src="/assets/images/motorcycle_<?= $motorcycle_id ?>.jpg" alt="<?= $motorcycle_year ?> <?= $manufacturer_name ?> <?= $motorcycle_model ?>"></a>
-  <h4>Manufacturer: <a href="/manufacturers/<?= $manufacturer_id ?>.php"><?= $manufacturer_name ?></a></h4>
+  <h3><a href="/motorcycles/show.php?motorcycle_id=<?= $motorcycle_id ?>"><?= $motorcycle_year ?> <?= $manufacturer_name ?> <?= $motorcycle_model ?></a></h3>
+  <a href="/motorcycles/show.php?motorcycle_id=<?= $motorcycle_id ?>"><img src="/assets/images/motorcycle_<?= $motorcycle_id ?>.jpg" alt="<?= $motorcycle_year ?> <?= $manufacturer_name ?> <?= $motorcycle_model ?>"></a>
+  <h4>Manufacturer: <a href="/manufacturers/show.php?manufacturer_id=<?= $manufacturer_id ?>"><?= $manufacturer_name ?></a></h4>
   <h4>Category: <a href="/categories/show.php?id=<?= $category_id ?>"><?= $category_name ?></a></h4>
   <p><?= $motorcycle_cc ?>cc, <?= $motorcycle_hp ?>hp</p>
 </div>

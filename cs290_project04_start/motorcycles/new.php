@@ -16,9 +16,8 @@ if ($db->connect_error) {
 $sql_categories = "SELECT id, name FROM categories ORDER BY name;";
 $categories = $db->query($sql_categories);
 
-//
-// TODO: Obtain the rows of manufacturers
-//
+$sql_manufacturers = "SELECT id, name FROM manufacturers ORDER BY name;";
+$manufacturers = $db->query($sql_manufacturers);
 ?>
     <h2>Add a New Motorcycle</h2>
     <div id="motorcycle_form_container">
@@ -38,12 +37,13 @@ $categories = $db->query($sql_categories);
         <label for="manufacturer_id">Manufacturer</label>
         <select name="manufacturer_id">
           <option value="">Select...</option>
-          <!-- TODO: Generate the option tags -->
-          <option value="1">TODO</option>
-          <option value="1">TODO</option>
-          <option value="1">TODO</option>
-          <option value="1">TODO</option>
-          <option value="1">TODO</option>
+          <?php
+            while ($manufacturer = $manufacturers->fetch_assoc()) {
+              $manufacturer_id = $manufacturer['id'];
+              $manufacturer_name = $manufacturer['name'];
+          ?>
+          <option value="<?= $manufacturer_id ?>"><?= $manufacturer_name ?></option>
+          <?php } ?>
         </select>
         <br>
         <label for="model">Model</label>

@@ -19,11 +19,11 @@ if ($db->connect_error) {
   die("Error: Could not connect to database. " . $db->connect_error);
 }
 
-$sql_insert_motorcycle = "INSERT INTO motorcycles(model, year, engine_cc, engine_hp, category_id, manufacturer_id)
-  VALUES('$model', $year, $cc, $hp, $category_id, $manufacturer_id);";
-// TODO: execute the query
+$sql_insert_motorcycle = "INSERT INTO motorcycles(model, year, engine_cc, engine_hp, category_id, manufacturer_id) VALUES('$model', $year, $cc, $hp, $category_id, $manufacturer_id);";
+$new_motorcycle = $db->query($sql_insert_motorcycle);
 
-$new_motorcycle_id = $db->insert_id;
-// TODO: Use the `header` function to send a redirect to the URL that displays
-//       the motorcycle details with id $new_motorcycle_id.
+$new_motorcycle_id = $db->$insert_id;
+	header('Location: /motorcycles/show.php?motorcycle_id=$new_motorcycle_id');
+
+mysqli_close($db);
 ?>
